@@ -14,6 +14,6 @@ module.exports = function (task) {
         .pipe(gulp.dest(baseDir));
     }
 
-    laravel.notifier.message('Not in production environment, not minimizing css');
+    task.notifier.message('Not in production environment, not minimizing css');
   });
 };

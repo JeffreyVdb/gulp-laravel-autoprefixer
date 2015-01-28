@@ -22,7 +22,6 @@ Laravel.addTask('autoprefixer', require('gulp-laravel-autoprefixer'));
 
 gulp.task('default', function () {
   (new Laravel(gulp))
-    .startSection('compiling stylesheets')
     .task('autoprefixer')
     .run();
 });
